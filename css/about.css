@@ -1,0 +1,39 @@
+/* about page starts here */
+.about-banner {
+    background-image: url(/assets/banners/banner-about-new.png);
+    background-size: cover;
+    background-position: center;
+    height: 500px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.about-banner h1 {
+    text-align: center;
+    width: 80%;
+}
+
+.about {
+    padding: 5% 17%;
+}
+
+.story p {
+    margin-bottom: 1rem;
+}
+
+.stuff-cards {
+    padding-top: 30px;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-gap: 5%;
+}
+
+.stuffcard {
+    text-align: center;
+}
+
+.stuffcard img {
+    max-width: 100%;
+    border-radius: 50%;
+}

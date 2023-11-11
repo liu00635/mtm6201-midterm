@@ -5,97 +5,163 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Chillax Ice Cream</title>
+    <link rel="stylesheet" href="css/reset.css">
+    <link rel="stylesheet" href="css/public.css">
     <link rel="stylesheet" href="css/main.css">
     <link rel="stylesheet" href="https://use.typekit.net/nlf8beu.css">
+    <link href="https://fonts.googleapis.com/css2?family=Chango&display=swap" rel="stylesheet">
 </head>
 
+
 <body>
-    <header>
-        <div class="navigation">
-            <!-- add logo here -->
+    <div class="container">
+        <header>
+            <!-- this is navigation bar -->
+            <div class="navigation">
+                <img src="assets/icons/logo.png" alt="logo" id="mainlogo">
 
-            <nav class="main-menu">
-                <ul>
-                    <li><a href="#">HOME</a></li>
-                    <li><a href="about.html">ABOUT US</a></li>
-                    <li><a href="contact.html">CONTACT</a></li>
-                </ul>
-            </nav>
+                <nav class="main-menu">
+                    <ul>
+                        <li><a href="index.html">HOME</a></li>
+                        <li><a href="about.html">ABOUT US</a></li>
+                        <li><a href="contact.html">CONTACT</a></li>
+                    </ul>
+                </nav>
 
-            <!-- searching area -->
-            <!-- add searching bar, icons here -->
-        </div>
+                <input type="text" id="searchbar" name="searchbar" placeholder="search">
+            </div>
 
-        <div class="banner">
-            <h1>Chillax Your Summer!</h1>
-            <p>draw your own ice cream cup to win 1 month free ice cream!</p>
-            <button>SHOP NOW</button>
-        </div>
-    </header>
+            <div class="nav-mobile">
+                <img src="/assets/icons/icons8-hamburger-menu.svg" alt="hamburger-icon">
+                <img src="assets/icons/logo.png" alt="logo" id="mainlogo-mobile">
+                <img src="/assets/icons/icons8-search.svg" alt="search-icon">
+            </div>
 
-    <main>
-        <div class="catagories">
-            <h2>Popular Catagories</h2>
-            <button>view all catagories</button>
-            <div class="catagory1">Classic</div>
-            <div class="catagory2">New</div>
-            <div class="catagory3">Vegan</div>
-        </div>
-        <div class="top-products">
-            <h2>Top Scoops</h2>
-            <button>view all products</button>
-            <div class="product1">
-                <h4>Blueberry Dream</h4>
-                <p>$ 7.99 CAD</p>
-            </div>
-            <div class="product2">
-                <h4>Simple Choco</h4>
-                <p>$ 7.99 CAD</p>
-            </div>
-            <div class="product3">
-                <h4>Spring Bliss</h4>
-                <p>$ 7.99 CAD</p>
-            </div>
-            <div class="product4">
-                <h4>Lemon Motcha</h4>
-                <p>$ 7.99 CAD</p>
-            </div>
-        </div>
-        <div class="reviews">
-            <h2>Feedback from our customers</h2>
-            <p>Lorem ipsum dolor sit amet consectetur. Enim nulla maecenas
-                molestie consequat ac volutpat quis.</p>
-            <div class="review-card">
-                <h3>Amazing Taste</h3>
-                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Ratione reprehenderit porro nisi architecto
-                    error doloribus repudiandae odit, nihil maiores rem odio incidunt voluptatem vel praesentium beatae
-                    perspiciatis debitis adipisci impedit!
-                </p>
-            </div>
-            <div class="review-card">
-                <h3>Good Engironment</h3>
-                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Ratione reprehenderit porro nisi architecto
-                    error doloribus repudiandae odit, nihil maiores rem odio incidunt voluptatem vel praesentium beatae
-                    perspiciatis debitis adipisci impedit!
-                </p>
-            </div>
-            <div class="review-card">
-                <h3>Fun Experience</h3>
-                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Ratione reprehenderit porro nisi architecto
-                    error doloribus repudiandae odit, nihil maiores rem odio incidunt voluptatem vel praesentium beatae
-                    perspiciatis debitis adipisci impedit!
-                </p>
-            </div>
-        </div>
+            <!-- this is main banner -->
+            <div class="banner">
 
-    </main>
+                <!-- <img src="assets/banners/banner.png" alt="home-banner"> -->
+                <img src="assets/banners/home-banner-1500.jpg" alt="home-banner-lg" id="home-banner-lg">
+                <img src="assets/banners/home-banner-mobile-960.jpg" alt="home-banner-sm" id="home-banner-sm">
+                <div class="banner-content">
+                    <h1>Chillax Your Summer</h1>
+                    <p>Join to win 1 month free ice cream!</p>
+                    <a href="#products"> <button class="main-button">SHOP NOW</button></a>
+                </div>
 
-    <footer>
-        <img src="#" alt="logo">
+            </div>
+        </header>
+
+        <main>
+            <!-- catagories and products -->
+            <div class="sale">
+                <div class="catagories" id="catagories">
+                    <div class="section-header">
+                        <h2>Popular Catagories</h2>
+                        <button class="sub-button">view all catagories <img
+                                src="/assets/icons/icons8-arrow-right-48.png" alt="arrow"></button>
+                    </div>
+                    <div class="cata-cards">
+                        <div class="cata-card">
+                            <h3>Classic</h3>
+                            <img src="/assets/products/catagory1_800x800.jpg" alt="classic">
+                            <div class="overlay"></div>
+                        </div>
+                        <div class="cata-card">
+                            <h3>New</h3>
+                            <img src="/assets/products/catagory2_800x800.jpg" alt="new">
+                            <div class="overlay"></div>
+                        </div>
+                        <div class="cata-card">
+                            <h3>Vegan</h3>
+                            <img src="/assets/products/catagory3_800x800.jpg" alt="new">
+                            <div class="overlay"></div>
+                        </div>
+                    </div>
+                </div>
+                <div class="top-products" id="products">
+                    <div class="section-header">
+                        <h2>Top Scoops</h2>
+                        <button class="sub-button">view all products <img src="/assets/icons/icons8-arrow-right-48.png"
+                                alt="arrow"></button>
+                    </div>
+                    <div class="product-cards">
+                        <div class="product-card">
+                            <img src="/assets/products/product1_320x320.jpg" alt="blueberry">
+                            <h4>Blueberry Dream</h4>
+                            <p>$ 7.99 CAD</p>
+                        </div>
+                        <div class="product-card">
+                            <img src="/assets/products/product2_320x320.jpg" alt="choco">
+                            <h4>Simple Choco</h4>
+                            <p>$ 7.99 CAD</p>
+                        </div>
+                        <div class="product-card">
+                            <img src="/assets/products/product3_320x320.jpg" alt="spring">
+                            <h4>Spring Bliss</h4>
+                            <p>$ 7.99 CAD</p>
+                        </div>
+                        <div class="product-card">
+                            <img src="/assets/products/product4_320x320.jpg" alt="lemon">
+                            <h4>Lemon Motcha</h4>
+                            <p>$ 7.99 CAD</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <!-- shows customer reviews -->
+            <div class="reviews">
+                <div class="review-header">
+                    <h2>Feedback from our customers</h2>
+                    <p>Lorem ipsum dolor sit amet consectetur. Enim nulla maecenas<br>
+                        molestie consequat ac volutpat quis.</p>
+                </div>
+                <div class="review-cards">
+                    <div class="review-card">
+                        <h3>Amazing Taste</h3>
+                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Ratione reprehenderit porro nisi
+                            architecto
+                            error doloribus repudiandae odit, nihil maiores rem odio incidunt voluptatem vel praesentium
+                            beatae
+                            perspiciatis debitis adipisci impedit!
+                        </p>
+                    </div>
+                    <div class="review-card">
+                        <h3>Good Engironment</h3>
+                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Ratione reprehenderit porro nisi
+                            architecto
+                            error doloribus repudiandae odit, nihil maiores rem odio incidunt voluptatem vel praesentium
+                            beatae
+                            perspiciatis debitis adipisci impedit!
+                        </p>
+                    </div>
+                    <div class="review-card">
+                        <h3>Fun Experience</h3>
+                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Ratione reprehenderit porro nisi
+                            architecto
+                            error doloribus repudiandae odit, nihil maiores rem odio incidunt voluptatem vel praesentium
+                            beatae
+                            perspiciatis debitis adipisci impedit!
+                        </p>
+                    </div>
+                </div>
+            </div>
+
+        </main>
+
+        <!-- this is footer -->
+        <img src="assets/icons/sublogo.png" alt="sublogo" id="sublogo">
         <p>Finding the fun of ice cream since 2014</p>
-        ©2023 Chillax Ice Cream
-    </footer>
+        <footer>
+            <div class="social-media">
+                <img src="assets/icons/icons8-instagram.svg" alt="ins-icon">
+                <img src="assets/icons/icons8-twitter.svg" alt="twitter-icon">
+                <img src="assets/icons/icons8-facebook.svg" alt="facebook-icon">
+            </div>
+            ©2023 Chillax Ice Cream
+        </footer>
 
+    </div> <!-- end of the body container -->
 </body>
 
 </html>
