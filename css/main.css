@@ -175,6 +175,19 @@
 
 @media screen and (max-width: 480px) {
 
+    h1 {
+        font-size: 3.5rem;
+    }
+
+    h2 {
+        font-size: 2rem;
+    }
+
+    .main-button {
+        font-size: 1.2rem;
+        width: 100%;
+    }
+
     #home-banner-lg {
         display: none;
     }
@@ -186,7 +199,7 @@
     .banner-content {
         width: 60%;
         position: absolute;
-        top: 60%;
+        top: 70%;
         left: 50%;
         transform: translate(-50%, -60%);
         text-align: center;

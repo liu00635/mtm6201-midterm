@@ -37,3 +37,24 @@
     max-width: 100%;
     border-radius: 50%;
 }
+
+@media screen and (max-width: 1024px) {
+    h1 {
+        font-size: 3rem;
+    }
+
+    .stuff-cards {
+        grid-template-columns: 1fr 1fr;
+    }
+}
+
+@media screen and (max-width: 480px) {
+
+    .stuff-cards {
+        grid-template-columns: 1fr;
+    }
+
+    .stuff-cards div:last-child {
+        margin-bottom: 100px;
+    }
+}

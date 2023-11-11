@@ -22,7 +22,8 @@
 
 .contact-area img {
     max-width: 100%;
-    height: auto;
+    height: 100%;
+    object-fit: cover;
     background-color: aliceblue;
 }
 
@@ -47,23 +48,23 @@ label {
 #name,
 #email,
 #message {
-    width: 80%;
+    width: 95%;
     border: #2A5687 solid 1px;
     border-radius: 5px;
 }
 
 #name,
 #email {
-    height: 40px;
+    height: 2rem;
 }
 
 #message {
-    height: 200px;
+    height: 10rem;
 }
 
 .contact-form button {
     margin-top: 20px;
-    width: 80%;
+    width: 95%;
 }
 
 .contact-info h2 {
@@ -78,7 +79,6 @@ label {
 .contact-icons {
     display: grid;
     grid-template-columns: 1fr 1fr 1fr;
-    grid-template-rows: 1fr 1fr;
     background-color: #C1D8ED;
     padding-top: 50px;
     padding-bottom: 50px;
@@ -87,4 +87,31 @@ label {
 .contact-icon {
     padding: 50px;
     text-align: center;
+}
+
+@media screen and (max-width: 480px) {
+    #greetingbear {
+        display: none;
+    }
+
+    .contact-area {
+        grid-template-columns: 1fr;
+    }
+
+    .contact-form {
+        padding: 10px;
+    }
+
+    .contact-icons {
+        grid-template-columns: 1fr 1fr;
+    }
+
+    .contact-icon {
+        padding: 10%;
+    }
+
+    .contact-icon img {
+        width: 35px;
+    }
+
 }
