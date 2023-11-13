@@ -42,6 +42,7 @@
     border-radius: 50%;
 }
 
+
 /* first breaking point @1024px */
 @media screen and (max-width: 1024px) {
     h1 {
@@ -53,7 +54,7 @@
     }
 }
 
-/* second and last breaking point @480px */
+/* second and last breaking point @578px */
 @media screen and (max-width: 578px) {
 
     .stuff-cards {
@@ -63,4 +64,5 @@
     .stuff-cards div:last-child {
         margin-bottom: 100px;
     }
+
 }
