@@ -50,10 +50,13 @@ img {
     max-width: 100%;
 }
 
-/* style the buttons */
+/* style the buttons: a main button and a sub button*/
+/* add animations to each button */
+/* change background colors and enlarge when hovered */
 button {
     font-weight: bold;
 }
+
 
 .main-button {
     background-color: #2A5687;
@@ -63,12 +66,14 @@ button {
     border: none;
     font-size: 18px;
     cursor: pointer;
-    transition: background-color 0.5s ease;
+    transition: background-color 0.5s ease, transform 0.5s ease-out;
 
 }
 
 .main-button:hover {
     background-color: #C1D8ED;
+    color: #2A5687;
+    transform: scale(1.1);
 }
 
 .sub-button {
@@ -81,17 +86,38 @@ button {
     display: flex;
     align-items: center;
     cursor: pointer;
-    transition: background-color 0.5s ease;
+    transition: background-color 0.5s ease, transform 0.5s ease-out;
 }
 
 .sub-button:hover {
     background-color: #2A5687;
     color: white;
+    transform: scale(1.1);
 }
 
+/* add an arrow icon to the sub button */
+.sub-button img {
+    height: 20px;
+    padding-left: 5px;
+}
 
+/* style the skip links - hidden defaultly and shows when focused */
+.skip-link {
+    position: absolute;
+    top: -50em;
+}
 
-/* header style */
+.skip-link:focus {
+    left: auto;
+    right: 10px;
+    top: 5px;
+    background-color: #333;
+    color: #fff;
+    padding: 5px 10px;
+    text-decoration: none;
+}
+
+/* style the header section */
 /* style the navigation area */
 .nav-mobile {
     display: none;
@@ -107,6 +133,7 @@ button {
     width: 50%;
 }
 
+/* main menu list styling- flex column */
 .main-menu ul {
     width: 100%;
     display: flex;
@@ -128,11 +155,18 @@ ul li {
     color: #2A5687;
 }
 
+.main-menu li a:hover {
+    color: #84bcf1;
+    text-decoration: underline;
+}
+
+/* style the logo and searchbar */
 #mainlogo {
     width: 100px;
     display: block;
     position: absolute;
     left: 10px;
+    cursor: pointer;
 }
 
 #searchbar {
@@ -150,14 +184,6 @@ ul li {
     margin: 0 auto;
 }
 
-#sublogo+p {
-    text-align: center;
-    font-size: 1.2rem;
-    color: #2A5687;
-    font-style: italic;
-    padding-bottom: 30px;
-}
-
 .social-media {
     background-color: #2A5687;
     color: white;
@@ -167,6 +193,11 @@ ul li {
 
 footer p {
     display: block;
+    text-align: center;
+    font-size: 1.2rem;
+    color: #2A5687;
+    font-style: italic;
+    padding-bottom: 30px;
 }
 
 .social-media img {
@@ -174,45 +205,23 @@ footer p {
     padding-top: 1rem;
 }
 
-/* style the skip links */
-.skip-link {
-    position: absolute;
-    top: -50em;
-}
 
-.skip-link:focus {
-    left: auto;
-    right: 10px;
-    top: 5px;
-    background-color: #333;
-    color: #fff;
-    padding: 5px 10px;
-    text-decoration: none;
-}
+/* add breaking point @578px */
+@media screen and (max-width: 578px) {
 
-/* add a fade in animation */
-.fade-in {
-    opacity: 0;
-    animation: fadeIn 1.5s ease-in-out forwards;
-}
-
-@keyframes fadeIn {
-    to {
-        opacity: 1;
-    }
-}
-
-@media screen and (max-width: 480px) {
+    /* change the font size */
     html {
         font-size: 12px;
     }
 
-
+    /* hide the logo and search bar in desktop version */
     #mainlogo,
     #searchbar {
         display: none;
     }
 
+
+    /* style the mobile navigation in flex */
     .nav-mobile {
         width: 100%;
         display: flex;
@@ -221,6 +230,14 @@ footer p {
 
     #mainlogo-mobile {
         width: 150px;
+    }
+
+    /* change menu from row to column */
+    .main-menu ul {
+        flex-direction: column;
+        position: relative;
+        right: 50%;
+        height: 150px;
     }
 
 

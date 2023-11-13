@@ -1,4 +1,5 @@
 /* contact page starts here */
+/* add background image to banner section */
 .contact-banner {
     background-image: url(/assets/banners/contact-banner-1500.jpg);
     background-size: cover;
@@ -27,7 +28,7 @@
     background-color: aliceblue;
 }
 
-
+/* style contact form section */
 .contact-form {
     display: block;
     padding: 50px;
@@ -67,6 +68,8 @@ label {
     width: 95%;
 }
 
+
+/* style the contact information section using grid system */
 .contact-info h2 {
     padding-top: 5%;
 }
@@ -89,7 +92,22 @@ label {
     text-align: center;
 }
 
-@media screen and (max-width: 480px) {
+/* add fitst breaking point @1080px */
+/* change the grid columns numbers */
+@media screen and (max-width: 1024px) {
+    .contact-area {
+        grid-template-columns: 1fr 2fr;
+    }
+
+    .contact-icons {
+        grid-template-columns: 1fr 1fr;
+    }
+
+}
+
+/* add breaking point @480px */
+/* hide the greeting bear image on mobile devices */
+@media screen and (max-width: 578px) {
     #greetingbear {
         display: none;
     }
@@ -100,10 +118,6 @@ label {
 
     .contact-form {
         padding: 10px;
-    }
-
-    .contact-icons {
-        grid-template-columns: 1fr 1fr;
     }
 
     .contact-icon {

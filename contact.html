@@ -13,20 +13,28 @@
 
 <body>
     <div class="container">
+        <!-- add skip-links for the main content and footer -->
         <div class="skip-links">
             <a href="#main-content" class="skip-link">Skip to main content</a>
             <a href="#footer" class="skip-link">Skip to footer</a>
         </div>
 
-        <header><!-- this is navigation bar -->
+        <!-- header contains navigation, banner image -->
+        <header id="header">
+
+            <!-- main nav for mobile devices -->
             <div class="nav-mobile">
                 <img src="/assets/icons/icons8-hamburger-menu.svg" alt="hamburger-icon">
                 <img src="assets/icons/logo.png" alt="mainlogo-mobile" id="mainlogo-mobile">
                 <img src="/assets/icons/icons8-search.svg" alt="search-icon">
             </div>
 
+            <!-- main nav for desktop and tablet devices -->
             <nav class="navigation" role="navigation">
-                <img src="assets/icons/logo.png" alt="mainlogo" id="mainlogo">
+                <!-- clicable logo linked to homepage -->
+                <a href="index.html">
+                    <img src="assets/icons/logo.png" alt="mainlogo" id="mainlogo">
+                </a>
                 <nav class="main-menu">
                     <ul>
                         <li><a href="index.html">HOME</a></li>
@@ -38,14 +46,18 @@
                 <input type="text" id="searchbar" name="searchbar" placeholder="search">
             </nav>
 
+            <!-- banner section that contains a heading and background image -->
             <div class="contact-banner" role="banner">
                 <h1>Contact Us</h1>
             </div>
         </header>
-        <!-- this is main area -->
+
+        <!-- the main section contains two divs: contact form and contact information -->
         <main id="main-content" role="main">
             <div class="contact">
                 <h2>Get in Touch!</h2>
+
+                <!-- contact form section : contains a block form and a image only shows on large screen -->
                 <div class="contact-area">
                     <img src="/assets/icons/contact.png " alt="greetingbear" id="greetingbear">
                     <div class="contact-form">
@@ -63,12 +75,13 @@
                         </form>
                     </div>
                 </div>
-                <!-- write the contact information -->
+
+                <!-- contact information section - includes social media icons and names -->
                 <div class="contact-info">
                     <h2>Find Us</h2>
                     <div class="contact-icons" itemscope itemtype="https://schema.org/Organization">
                         <div class="address, contact-icon">
-                            <img src="/assets/icons/icons8-address-48.png" alt="address-icon" role="image">
+                            <img src="/assets/icons/icons8-address-48.png" alt="address-icon">
                             <p itemprop="address" itemscope itemtype="https://schema.org/PostalAddress">
                                 <span itemprop="streetAddress">123 Main Street Ottawa</span>
                                 <span itemprop="addressLocality">Downtown</span>,
@@ -77,42 +90,47 @@
                             </p>
                         </div>
                         <div class="phone , contact-icon">
-                            <img src="/assets/icons/icons8-phone-48.png" alt="phone-icon" role="image">
+                            <img src="/assets/icons/icons8-phone-48.png" alt="phone-icon">
                             <p><span itemprop="telephone">343-432-5322</span></p>
                         </div>
                         <div class="email , contact-icon">
-                            <img src="/assets/icons/icons8-email-48.png" alt="email-icon" role="image">
+                            <img src="/assets/icons/icons8-email-48.png" alt="email-icon">
                             <p><span itemprop="email">chillaxicecream@gmail.com</span></p>
                         </div>
                         <div class="ins, contact-icon">
-                            <img src="/assets/icons/icons8-instagram-48.png" alt="ins-icon" role="image">
+                            <img src="/assets/icons/icons8-instagram-48.png" alt="ins-icon">
                             <p><span itemprop="name">@chillax-ice-cream</span></p>
                         </div>
                         <div class="facebook, contact-icon">
-                            <img src="/assets/icons/icons8-facebook-48.png" alt="facebook-icon" role="image">
+                            <img src="/assets/icons/icons8-facebook-48.png" alt="facebook-icon">
                             <p><span itemprop="name">@chillax-ice-cream</span></p>
                         </div>
                         <div class="twitter, contact-icon">
-                            <img src="/assets/icons/icons8-twitter-48.png" alt="twitter" role="image">
+                            <img src="/assets/icons/icons8-twitter-48.png" alt="twitter">
                             <p><span itemprop="name">@chillax-ice-cream</span></p>
                         </div>
                     </div>
                 </div>
+            </div>
         </main>
-        <!-- this is footer -->
-        <footer id="footer" role="footer">
-            <img src="assets/icons/sublogo.png" alt="sublogo" id="sublogo">
+
+        <!-- footer section contains a sublogo, slogan, social media links and copyright -->
+        <footer id="footer">
+            <!-- clickable sublogo linked to header -->
+            <a href="#header">
+                <img src="assets/icons/sublogo.png" alt="sublogo" id="sublogo">
+            </a>
             <p>Finding the fun of ice cream since 2014</p>
             <div class="social-media">
-                <img src="assets/icons/icons8-instagram.svg" alt="ins-icon" role="image">
-                <img src="assets/icons/icons8-twitter.svg" alt="twitter-icon" role="image">
-                <img src="assets/icons/icons8-facebook.svg" alt="facebook-icon" role="image">
+                <img src="assets/icons/icons8-instagram.svg" alt="ins-icon">
+                <img src="assets/icons/icons8-twitter.svg" alt="twitter-icon">
+                <img src="assets/icons/icons8-facebook.svg" alt="facebook-icon">
                 <div class="copyright">
                     ©2023 Chillax Ice Cream
                 </div>
             </div>
         </footer>
-    </div>
+    </div><!-- end of the body container -->
 </body>
 
 </html>

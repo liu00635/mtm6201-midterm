@@ -1,4 +1,5 @@
 /* about page starts here */
+/* add background image to banner section */
 .about-banner {
     background-image: url(/assets/banners/banner-about-new.png);
     background-size: cover;
@@ -23,6 +24,8 @@
     margin-bottom: 1rem;
 }
 
+/* style the stuff section using grid system */
+/* Use border radius to turn stuff images into circles */
 .stuff-cards {
     padding-top: 30px;
     display: grid;
@@ -39,6 +42,7 @@
     border-radius: 50%;
 }
 
+/* first breaking point @1024px */
 @media screen and (max-width: 1024px) {
     h1 {
         font-size: 3rem;
@@ -49,7 +53,8 @@
     }
 }
 
-@media screen and (max-width: 480px) {
+/* second and last breaking point @480px */
+@media screen and (max-width: 578px) {
 
     .stuff-cards {
         grid-template-columns: 1fr;

@@ -15,21 +15,28 @@
 
 <body>
     <div class="container">
+        <!-- add skip-links for the main content and footer -->
         <div class="skip-links">
             <a href="#main-content" class="skip-link">Skip to main content</a>
             <a href="#footer" class="skip-link">Skip to footer</a>
         </div>
 
-        <header><!-- this is navigation bar -->
+        <!-- header contains navigation, banner image and button(links to sales area) -->
+        <header id="header">
 
+            <!-- main nav for mobile devices -->
             <div class="nav-mobile">
                 <img src="/assets/icons/icons8-hamburger-menu.svg" alt="hamburger-icon">
                 <img src="assets/icons/logo.png" alt="mainlogo-mobile" id="mainlogo-mobile">
                 <img src="/assets/icons/icons8-search.svg" alt="search-icon">
             </div>
 
+            <!-- main nav for desktop and tablet devices -->
             <nav class="navigation" role="navigation">
-                <img src="assets/icons/logo.png" alt="mainlogo" id="mainlogo">
+                <!-- clicable logo linked to homepage -->
+                <a href="index.html">
+                    <img src="assets/icons/logo.png" alt="mainlogo" id="mainlogo">
+                </a>
                 <nav class="main-menu">
                     <ul>
                         <li><a href="index.html">HOME</a></li>
@@ -42,7 +49,7 @@
                     title="Enter your search query here">
             </nav>
 
-            <!-- this is main banner image area-->
+            <!-- banner section that contains a banner image and content texts - the image has a fade-in animation -->
             <div class="banner" role="banner">
                 <img class="fade-in"
                     srcset="/assets/banners/home-banner-960.jpg 960w,/assets/banners/home-banner-1500.jpg 1500w"
@@ -50,31 +57,36 @@
                     src="assets/banners/home-banner-1500.jpg" alt="home-banner-lg" id="home-banner-lg">
                 <img class="fade-in" src="/assets/banners/home-banner-mobile-960.jpg" alt="home-banner-sm"
                     id="home-banner-sm">
+                <div class="banner-icon"><img src="/assets/icons/Vector-3.png" alt="waterdrop" id="waterdrop-left">
+                </div>
+                <div class="banner-icon"><img src="/assets/icons/Vector-2.png" alt="waterdrop" id="waterdrop-right">
+                </div>
                 <div class="banner-content">
                     <h1>Chillax Your Summer</h1>
                     <p>Join to win 1 month free ice cream!</p>
                     <a href="#products"> <button role="button" class="main-button">SHOP NOW</button></a>
                 </div>
-                <!-- <div class="half-overlay"></div> -->
             </div>
         </header>
 
+        <!-- the main section contains three divs: categories,products and reviews -->
         <main id="main-content" role="main">
-            <!-- categories and products -->
             <div class="sale" itemscope itemtype="https://schema.org/Product">
+                <!-- a header wrap contains a heading and a view-more button -->
                 <div class="categories" id="categories">
                     <div class="section-header">
                         <h2>Popular Catagories</h2>
                         <button class="sub-button">view all categories <img
                                 src="/assets/icons/icons8-arrow-right-48.png" alt="icon of arrow"></button>
                     </div>
+                    <!-- a grid container for categories -->
                     <div class="cate-cards">
                         <div class="cate-card">
                             <h3 itemprop="category">Classic</h3>
                             <img itemprop="image"
                                 srcset="/assets/products/catagory1_320x320.jpg 320w, /assets/products/catagory1_800x800.jpg 800w"
                                 sizes="(max-width: 480px) 480px,(max-width: 1024px) 1024px"
-                                src="/assets/products/catagory1_800x800.jpg" role="image" alt="classic">
+                                src="/assets/products/catagory1_800x800.jpg" alt="classic">
                             <div class="overlay"></div>
                         </div>
                         <div class="cate-card">
@@ -82,7 +94,7 @@
                             <img itemprop="image"
                                 srcset="/assets/products/catagory2_320x320.jpg 320w, /assets/products/catagory2_800x800.jpg 800w"
                                 sizes="(max-width: 480px) 480px,(max-width: 1024px) 1024px"
-                                src="/assets/products/catagory2_800x800.jpg" role="image" alt="new">
+                                src="/assets/products/catagory2_800x800.jpg" alt="new">
                             <div class="overlay"></div>
                         </div>
                         <div class="cate-card">
@@ -90,24 +102,26 @@
                             <img itemprop="image"
                                 srcset="/assets/products/catagory3_320x320.jpg 320w, /assets/products/catagory3_800x800.jpg 800w"
                                 sizes="(max-width: 480px) 480px,(max-width: 1024px) 1024px"
-                                src="/assets/products/catagory3_800x800.jpg" role="image" alt="vegan">
+                                src="/assets/products/catagory3_800x800.jpg" alt="vegan">
                             <div class="overlay"></div>
                         </div>
                     </div>
                 </div>
 
                 <div class="top-products" id="products">
+                    <!-- a header wrap contains a heading and a view-more button -->
                     <div class="section-header">
                         <h2>Top Scoops</h2>
-                        <button class="sub-button">view all products <img role="image"
-                                src="/assets/icons/icons8-arrow-right-48.png" alt="icon of arrow"></button>
+                        <button class="sub-button">view all products <img src="/assets/icons/icons8-arrow-right-48.png"
+                                alt="icon of arrow"></button>
                     </div>
+                    <!-- a grid container for products -->
                     <div class="product-cards">
                         <div class="product-card">
                             <img itemprop="image"
                                 srcset="/assets/products/product1_320x320.jpg 320w, /assets/products/product1_800x800.jpg 800w"
                                 sizes="(max-width: 480px) 480px,(max-width: 1024px) 1024px"
-                                src="/assets/products/product1_320x320.jpg" role="image" alt="blueberry">
+                                src="/assets/products/product1_320x320.jpg" alt="blueberry">
                             <h4><span itemprop="name">Blueberry Dream</span></h4>
                             <div itemprop="offers" itemscope itemtype="https://schema.org/Offer">
                                 <p itemprop="price" content="13.00">13.00</p>
@@ -117,7 +131,7 @@
                             <img itemprop="image"
                                 srcset="/assets/products/product2_320x320.jpg 320w, /assets/products/product2_800x800.jpg 800w"
                                 sizes="(max-width: 480px) 480px,(max-width: 1024px) 1024px"
-                                src="/assets/products/product2_320x320.jpg" role="image" alt="choco">
+                                src="/assets/products/product2_320x320.jpg" alt="choco">
                             <h4><span itemprop="name">Simple Choco</span></h4>
                             <div itemprop="offers" itemscope itemtype="https://schema.org/Offer">
                                 <p itemprop="price" content="13.00">13.00</p>
@@ -127,7 +141,7 @@
                             <img itemprop="image"
                                 srcset="/assets/products/product3_320x320.jpg 320w, /assets/products/product3_800x800.jpg 800w"
                                 sizes="(max-width: 480px) 480px,(max-width: 1024px) 1024px"
-                                src="/assets/products/product3_320x320.jpg" role="image" alt="spring">
+                                src="/assets/products/product3_320x320.jpg" alt="spring">
                             <h4><span itemprop="name">Spring Bliss</span></h4>
                             <div itemprop="offers" itemscope itemtype="https://schema.org/Offer">
                                 <p itemprop="price" content="13.00">13.00</p>
@@ -137,7 +151,7 @@
                             <img itemprop="image"
                                 srcset="/assets/products/product4_320x320.jpg 320w, /assets/products/product4_800x800.jpg 800w"
                                 sizes="(max-width: 480px) 480px,(max-width: 1024px) 1024px"
-                                src="/assets/products/product4_320x320.jpg" role="image" alt="lemon">
+                                src="/assets/products/product4_320x320.jpg" alt="lemon">
                             <h4><span itemprop="name">Lemon Motcha</span></h4>
                             <div itemprop="offers" itemscope itemtype="https://schema.org/Offer">
                                 <p itemprop="price" content="13.00">13.00</p>
@@ -148,7 +162,7 @@
             </div>
 
             <!-- shows customer reviews -->
-            <div class="reviews" itemprop="review" itemscope itemtype="https://schema.org/Review">
+            <div class="reviews" itemscope itemtype="https://schema.org/Review">
                 <div class="review-header">
                     <h2>Feedback from our customers</h2>
                     <p>Lorem ipsum dolor sit amet consectetur. Enim nulla maecenas<br>
@@ -193,9 +207,12 @@
 
         </main>
 
-        <!-- this is footer -->
-        <footer id="footer" role="footer">
-            <img src="assets/icons/sublogo.png" alt="sublogo" id="sublogo">
+        <!-- footer section contains a sublogo, slogan, social media links and copyright -->
+        <footer id="footer">
+            <!-- clickable sublogo linked to header -->
+            <a href="#header">
+                <img src="assets/icons/sublogo.png" alt="sublogo" id="sublogo">
+            </a>
             <p>Finding the fun of ice cream since 2014</p>
             <div class="social-media">
                 <img src="assets/icons/icons8-instagram.svg" alt="ins-icon">
