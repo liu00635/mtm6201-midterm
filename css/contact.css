@@ -1,7 +1,7 @@
 /* contact page starts here */
 /* add background image to banner section */
 .contact-banner {
-    background-image: url(/assets/banners/contact-banner-1500.jpg);
+    background-image: url(./assets/banners/contact-banner-1500.jpg);
     background-size: cover;
     background-position: center;
     height: 500px;
