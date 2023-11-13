@@ -16,6 +16,7 @@
     object-fit: cover;
 }
 
+
 .banner-content {
     width: 30%;
     position: absolute;
@@ -45,12 +46,12 @@
     background-color: #C1D8ED;
 }
 
-/* style the catagories area */
+/* style the categories area */
 .sale {
     padding: 5% 10%;
 }
 
-.cata-cards {
+.cate-cards {
     display: grid;
     grid-template-columns: repeat(3, 1fr);
     grid-gap: 3%;
@@ -58,7 +59,7 @@
 }
 
 
-.cata-card img {
+.cate-card img {
     display: block;
     max-width: 100%;
     height: auto;
@@ -66,7 +67,7 @@
     box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.3);
 }
 
-.cata-card {
+.cate-card {
     position: relative;
 }
 
@@ -82,17 +83,19 @@
     transition: background-color 0.5s ease;
 }
 
+
 .overlay:hover {
     background-color: rgba(0, 0, 0, 0);
 }
 
-.cata-card h3 {
+.cate-card h3 {
     position: absolute;
     left: 5%;
     top: 1%;
     color: white;
     z-index: 2;
 }
+
 
 .sub-button img {
     height: 20px;
@@ -106,7 +109,7 @@
     padding-top: 20px;
 }
 
-.catagories,
+.categories,
 .top-products {
     margin-bottom: 5%;
 }
@@ -160,7 +163,7 @@
 }
 
 @media screen and (max-width: 1024px) {
-    .cata-cards {
+    .cate-cards {
         grid-template-columns: repeat(2, 1fr);
     }
 
@@ -205,7 +208,7 @@
         text-align: center;
     }
 
-    .cata-cards {
+    .cate-cards {
         grid-template-columns: 1fr;
     }
 

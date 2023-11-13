@@ -13,17 +13,21 @@
 
 <body>
     <div class="container">
-        <header>
+        <div class="skip-links">
+            <a href="#brand-story" class="skip-link">Skip to brand story</a>
+            <a href="#stuff" class="skip-link">Skip to stuff</a>
+            <a href="#footer" class="skip-link">Skip to footer</a>
+        </div>
 
+        <header><!-- this is navigation bar -->
             <div class="nav-mobile">
                 <img src="/assets/icons/icons8-hamburger-menu.svg" alt="hamburger-icon">
-                <img src="assets/icons/logo.png" alt="logo" id="mainlogo-mobile">
+                <img src="assets/icons/logo.png" alt="mainlogo-mobile" id="mainlogo-mobile">
                 <img src="/assets/icons/icons8-search.svg" alt="search-icon">
             </div>
 
-            <div class="navigation">
-                <img src="assets/icons/logo.png" alt="logo" id="mainlogo">
-
+            <nav class="navigation" role="navigation">
+                <img src="assets/icons/logo.png" alt="mainlogo" id="mainlogo">
                 <nav class="main-menu">
                     <ul>
                         <li><a href="index.html">HOME</a></li>
@@ -31,17 +35,18 @@
                         <li><a href="contact.html">CONTACT</a></li>
                     </ul>
                 </nav>
-
+                <label for="searchbar"></label>
                 <input type="text" id="searchbar" name="searchbar" placeholder="search">
-            </div>
-            <div class="about-banner">
+            </nav>
+            <div class="about-banner" role="banner">
                 <h1>A place where you can enjoy delicious ice cream and be creatively inspired</h1>
             </div>
         </header>
 
-        <main>
+        <!-- this is brand story -->
+        <main id="main-content" role="main">
             <div class="about">
-                <div class="story">
+                <div class="story" id="brand-story">
                     <h2>Brand Story</h2>
                     <p>Lorem ipsum dolor sit amet consectetur. Etiam nec est urna lacus amet turpis eros. Turpis
                         habitasse diam facilisi facilisi dolor sit faucibus. Viverra laoreet molestie augue tortor
@@ -52,33 +57,39 @@
                         Mattis cursus phasellus semper fringilla penatibus euismod felis vulputate accumsan. Rhoncus
                         auctor at tortor malesuada pretium id amet.</p>
 
-                    <img src="/assets/about/video.png" alt="video-placeholder">
+                    <img src="/assets/about/video.png" alt="video-placeholder" role="image">
 
                     <p>Lorem ipsum dolor sit amet consectetur. Arcu in quam
                         mus duis cras. Eu lectus pharetra risus semper
                         vulputate. Tellus vel semper enim id magna ac.</p>
                 </div>
-
-                <div class="stuff">
+                <!-- meet the stuff -->
+                <div class="stuff" id="stuff">
                     <h2>Our Stuff</h2>
                     <div class="stuff-cards">
-                        <div class="stuffcard">
-                            <img src="/assets/about/stuff1.jpg" alt="Bob">
-                            <h3>Bob</h3>
+                        <div class="stuffcard" itemscope itemtype="https://schema.org/Person">
+                            <img src="/assets/about/stuff1.jpg" alt="Bob" role="image">
+                            <h3><span itemprop="givenName">John</span>
+                                <span itemprop="familyName">Doe</span>
+                            </h3>
                             <p>Lorem ipsum dolor sit amet consectetur. Non auctor leo egestas diam nunc. Montes sed
                                 pellentesque
                                 imperdiet</p>
                         </div>
                         <div class="stuffcard">
-                            <img src="/assets/about/stuff2.jpg" alt="Lucy">
-                            <h3>Lucy</h3>
+                            <img src="/assets/about/stuff2.jpg" alt="Lucy" role="image">
+                            <h3><span itemprop="givenName">Lucy</span>
+                                <span itemprop="familyName">Car</span>
+                            </h3>
                             <p>Lorem ipsum dolor sit amet consectetur. Non auctor leo egestas diam nunc. Montes sed
                                 pellentesque
                                 imperdiet</p>
                         </div>
                         <div class="stuffcard">
-                            <img src="/assets/about/stuff3.jpg" alt="Emily">
-                            <h3>Emily</h3>
+                            <img src="/assets/about/stuff3.jpg" alt="Emily" role="image">
+                            <h3><span itemprop="givenName">Emily</span>
+                                <span itemprop="familyName">Willson</span>
+                            </h3>
                             <p>Lorem ipsum dolor sit amet consectetur. Non auctor leo egestas diam nunc. Montes sed
                                 pellentesque
                                 imperdiet</p>
@@ -88,13 +99,19 @@
             </div>
     </div>
     </main>
-
-    <img src="assets/icons/sublogo.png" alt="sublogo" id="sublogo">
-    <p>Finding the fun of ice cream since 2014</p>
-    <footer>
-        ©2023 Chillax Ice Cream
+    <!-- this is footer -->
+    <footer id="footer" role="footer">
+        <img src="assets/icons/sublogo.png" alt="sublogo" id="sublogo">
+        <p>Finding the fun of ice cream since 2014</p>
+        <div class="social-media">
+            <img src="assets/icons/icons8-instagram.svg" alt="ins-icon" role="image">
+            <img src="assets/icons/icons8-twitter.svg" alt="twitter-icon" role="image">
+            <img src="assets/icons/icons8-facebook.svg" alt="facebook-icon" role="image">
+            <div class="copyright">
+                ©2023 Chillax Ice Cream
+            </div>
+        </div>
     </footer>
-    </div>
 
 </body>
 
